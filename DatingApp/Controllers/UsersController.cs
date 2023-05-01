@@ -26,7 +26,7 @@ namespace DatingApp.Controllers
 
         //[AllowAnonymous]
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<AppUser>>> GetUsers()
+        public async Task<ActionResult<IEnumerable<MemberDto>>> GetUsers()
         {
             //var users = await _context.Users.ToListAsync();
 
