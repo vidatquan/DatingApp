@@ -27,5 +27,7 @@ namespace DatingApp.Entities
         // {
         //     return DateOfBirth.CalcuateAge();
         // }
+        public List<UserLike> LikedByUsers { get; set; }
+        public List<UserLike> LikedUsers { get; set; }
     }
 }
