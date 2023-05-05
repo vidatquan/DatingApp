@@ -31,6 +31,7 @@ namespace DatingApp.Controllers
             _userRepository = userRepository;
         }
 
+        //[Authorize(Roles = "Admin")]
         //[AllowAnonymous]
         [HttpGet]
         //public async Task<ActionResult<IEnumerable<MemberDto>>> GetUsers()
@@ -60,6 +61,8 @@ namespace DatingApp.Controllers
 
             return Ok(users);
         }
+
+        //[Authorize(Roles = "Member")]
 
         //[Authorize]
         [HttpGet("{username}")]
